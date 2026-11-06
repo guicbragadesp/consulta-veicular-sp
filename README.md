@@ -1,5 +1,13 @@
 # BRAGA Consulta Veicular
 
+## Correção da emissão de guias da PGE para o BRAGA 1.9.44
+
+O fluxo de emissão aceita os botões Gerar DARE e Download DARE da PGE e tenta fechar o aviso Importante antes de baixar a guia. A correção também aceita os rótulos GARE.
+
+[Baixar a correção manual da PGE para a versão 1.9.44](atualizacoes/BRAGA-1.9.44-correcao-emissao-PGE.zip)
+
+Com o BRAGA 1.9.44 fechado, extraia o ZIP e copie o arquivo da pasta `app` extraída para a pasta `app` do programa, substituindo `pge-guides.js`. Reabra o BRAGA após copiar o arquivo.
+
 ## Versão 1.9.30 — 02/10/2026
 
 Inclui a versão 1.9.29 de 01/10 e a correção do Detran de 02/10.
