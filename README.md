@@ -1,5 +1,18 @@
 # BRAGA Consulta Veicular
 
+## Versão 1.9.46 — 10/11/2026
+
+Atualize pelo botão **Verificar atualizações** no BRAGA.
+
+[Instalador e notas da versão 1.9.46](https://github.com/guicbragadesp/consulta-veicular-sp/releases/tag/v1.9.46)
+
+- Inclui Restrição RENAVE (Confirmado Estoque) e Comunicação RENAVE (Saída Estoque).
+- RENAVE com “Não informado” não gera alerta. Resultados que exigem atenção aparecem em vermelho e negrito, com o mesmo aviso das outras restrições.
+- Mostra “POSSÍVEL DÉBITO DE DÍVIDA ATIVA” quando há IPVA devido e pagamento efetuado zerado. Nessa situação, exige consulta direta à PGE mesmo com “Nada consta” na Fazenda.
+- Preserva o “Nada consta” retornado pela própria PGE e não soma o IPVA devido como dívida automaticamente.
+
+Validação: 34 testes passaram; instalação conferida com backup e preservação dos dados. Feche e reabra o BRAGA após instalar.
+
 ## Correção da emissão de guias da PGE para o BRAGA 1.9.44
 
 O fluxo de emissão aceita os botões Gerar DARE e Download DARE da PGE e tenta fechar o aviso Importante antes de baixar a guia. A correção também aceita os rótulos GARE.
